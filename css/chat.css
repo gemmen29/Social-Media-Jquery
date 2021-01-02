@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* background-color: #1e1e1eef; */
+}
+
+body {
+    background-color: #242526;
+}
+
+nav {
+    color: white;
+    background-color: #4D636F;
+    width: 100%;
+    height: 55px;
+    z-index: 10;
+}
+
+nav li :hover {
+    background-color: #3A4B53;
+}
+
+nav ul a {
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+}
+
+.scrollbar {
+    height: 600px;
+    scrollbar-width: thin;
+    scrollbar-color: #515153b8 #ffffff;
+}
+
+.chat-img {
+    width: 58px;
+    height: 58px
+}
+
+.chat-message {
+    border-radius: 20px;
+    background-color: #121612;
+    color: white;
+    word-wrap: break-word;
+    max-width: 80%;
+    /* display: flex; */
+    /* text-wrap: wrap; */
+}
+
+.friends {
+    color: white;
+}
+
+.friends:hover {
+    background-color: #42464a9c;
+    color: white;
+}
+
+#chat-container {
+    border-left: 2px solid white
+}
+
+@media screen and (max-width: 575.2px) {
+    nav {
+        height: 50px;
+    }
+    nav ul a i {
+        padding-left: 15px;
+    }
+    nav div.collapse {
+        margin-top: 2px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #chat-container {
+        border-top: 2px solid white;
+        border-left: 0px
+    }
+}

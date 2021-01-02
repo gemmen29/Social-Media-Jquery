@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark position-fixed">
+        <a class="navbar-brand" href="profile.html">
+            <i class="fas fa-home"></i>&nbsp; Home
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="background-color: #4D636F;" class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-globe-africa"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li id="notification" class="nav-item">
+                    <a style="padding-right: 40px;" class="nav-link" href="#">
+                        <span id="notification-value" class="badge badge-pill badge-success" style="float:right;margin-bottom:-35px;margin-right:-35px">1</span>
+                        <i class="fas fa-bell"></i>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-sm-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="chat.html">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div style="padding-top: 70px"></div>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 offset-lg-0 offset-sm-2 col-sm-8 col-12">
+                <div class="card" style="width:100%">
+                    <h5 id="profile-name" style="text-align:center">My Profile</h5>
+                    <!-- <img class="card-img-top rounded-circle img-fluid profile-image" src="img_avatar1.png" alt="Card image"> -->
+                    <img id="profile" style="width:150px;height: 150px;margin: auto;" class="card-img-top rounded-circle" src="img_avatar1.png" alt="Card image">
+                    <button id="change-profile-image" class="btn fas fa-camera-retro">
+                    </button>
+                    <input type="file" id="change-profile-dialog" style="display:none" accept=".jpg,.png" />
+                    <hr style="background-color: white">
+                    <div class="card-body">
+                        <a class="nav-link profile-icons" href="#">
+                            <i class="fas fa-pen"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="profile-text">Designer , UI</span>
+                        </a>
+                        <a style="margin-top:5px" class="nav-link profile-icons" href="#">
+                            <i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="profile-text" style="margin-left: 2px;">Designer , UI</span>
+                        </a>
+                        <a style="margin-left:2px;margin-top:5px" class="nav-link profile-icons" href="#">
+                            <i class="fas fa-birthday-cake"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="profile-text">Designer , UI</span>
+                        </a>
+                    </div>
+                </div>
+                <div style="width:100%;margin-top:10px" class="btn-group-vertical shadow-sm">
+                    <button type="button" style="background-color:#7D97A5;color:white;text-align: left;border-radius:0px" class="btn">
+                        <i class="fas fa-circle-notch"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>My Groups</span>
+                    </button>
+                    <button type="button" style="background-color:#7D97A5;color:white;text-align: left;border-radius:0px" class="btn">
+                        <i class="far fa-calendar-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        My Events
+                    </button>
+                    <button type="button" style="background-color:#7D97A5;color:white;text-align: left;border-radius:0px" class="btn">
+                        <i class="fas fa-users"></i>&nbsp;&nbsp;&nbsp;
+                        My Photos
+                    </button>
+                </div>
+                <div class="card" style="width:100%;padding:10px;margin-top: 10px;">
+                    <div style="font-size:25px">Interests</div>
+                    <div class="d-flex flex-wrap">
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">News</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">W3Schools</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">News</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">W3Schools</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">News</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">W3Schools</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">News</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">W3Schools</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">W3Schools</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">News</div>
+                        <div class="interests-button-color p-2 mr-2 mb-2 rounded">W3Schools</div>
+                    </div>
+                </div>
+
+                <div style="margin-top:10px" class="alert-color alert alert-success">
+                    <button style="margin-right: -20px;margin-top:-12px; padding:5px" class="close">&times;</button>
+                    <strong>Success!</strong><br> Indicates a successful or positive action.
+                </div>
+            </div>
+            <div class="col-lg-7 col-12">
+                <div class="card" style="width:100%;padding:5px">
+                    <p style="color:#a2a2a2;padding-left:10px">Create New Post</p>
+                    <input id="post-text" type="text" class="form-control" placeholder="Status : Feeling Blue">
+                    <input type="file" id="file-post-image" class="form-control" style="display:none" accept=".jpg,.png" />
+                    <button id="browse-image" style="width:100px" class="btn btn-success mt-2">Browse</button>
+                    <button id="post-button" style="margin-top:10px;width:100px;background-color:#7D97A5;color:white;text-align: center;" class="btn">
+                        <i class="fas fa-pen"></i>&nbsp;
+                        <span>Post</span>
+                    </button>
+                </div>
+                <div class="card" style="width:100%;padding:10px;margin-top: 10px;">
+                    <div style="width:100%;">
+                        <img style="width: 50px;" class="card-img-top rounded-circle img-fluid" src="img_avatar1.png" alt="Card image">
+                        <span style="padding-left:5px">John Doe</span>
+                        <span style="float:right;position: relative;top:10px">1 min</span>
+                    </div>
+                    <p style="margin-top:25px;">
+                        Lorem ipsum dolor sit amet, tollit nostrum constituto in qui. Mandamus signiferumque te sea. Munere probatus legendos has eu, doctus aeterno qualisque mel ei, veniam recusabo conclusionemque cum eu. Sea id etiam affert possim.
+                    </p>
+                    <div style="width:100%;">
+                        <img style="width: 45%" class="card-img-top img-fluid" src="img_avatar1.png" alt="Card image">
+                        <img style="width: 45%" class="card-img-top img-fluid" src="img_avatar1.png" alt="Card image">
+                    </div>
+                    <div style="margin-top:15px">
+                        <button type="button" style="background-color:#435761; color:white;text-align: center;border-radius:0px;margin-right: 10px;" class="btn">
+                            <i class="fas fa-thumbs-up"></i> Like
+                        </button>
+                        <button type="button" style="background-color:#435761;color:white;text-align: center;border-radius:0px" class="btn">
+                            <i class="fas fa-comment"></i> Comment
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="width:100%;padding:10px;margin-top: 10px;">
+                    <div style="width:100%;">
+                        <img style="width: 50px;" class="card-img-top rounded-circle img-fluid" src="img_avatar1.png" alt="Card image">
+                        <span style="padding-left:5px">John Doe</span>
+                        <span style="float:right;position: relative;top:10px">1 min</span>
+                    </div>
+                    <p style="margin-top:25px;">
+                        Lorem ipsum dolor sit amet, tollit nostrum constituto in qui. Mandamus signiferumque te sea. Munere probatus legendos has eu, doctus aeterno qualisque mel ei, veniam recusabo conclusionemque cum eu. Sea id etiam affert possim.
+                    </p>
+                    <div style="margin-top:15px">
+                        <button type="button" style="background-color:#435761; color:white;text-align: center;border-radius:0px;margin-right: 10px;" class="btn">
+                            <i class="fas fa-thumbs-up"></i> Like
+                        </button>
+                        <button type="button" style="background-color:#435761;color:white;text-align: center;border-radius:0px" class="btn">
+                            <i class="fas fa-comment"></i> Comment
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="width:100%;padding:10px;margin-top: 10px;">
+                    <div style="width:100%;">
+                        <img style="width: 50px;" class="card-img-top rounded-circle img-fluid" src="img_avatar1.png" alt="Card image">
+                        <span style="padding-left:5px">John Doe</span>
+                        <span style="float:right;position: relative;top:10px">1 min</span>
+                    </div>
+                    <p style="margin-top:25px;">
+                        Lorem ipsum dolor sit amet, tollit nostrum constituto in qui. Mandamus signiferumque te sea. Munere probatus legendos has eu, doctus aeterno qualisque mel ei, veniam recusabo conclusionemque cum eu. Sea id etiam affert possim.
+                    </p>
+                    <div style="width:100%;">
+                        <img style="width: 100%" class="card-img-top img-fluid" src="img_avatar1.png" alt="Card image">
+                    </div>
+                    <div style="margin-top:15px">
+                        <button type="button" style="background-color:#435761; color:white;text-align: center;border-radius:0px;margin-right: 10px;" class="btn">
+                            <i class="fas fa-thumbs-up"></i> Like
+                        </button>
+                        <button type="button" style="background-color:#435761;color:white;text-align: center;border-radius:0px" class="btn">
+                            <i class="fas fa-comment"></i> Comment
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 d-lg-block d-none">
+                <div class="card" style="width:100%;padding:10px;">
+                    <div style="text-align:center">Upcoming Event:</div>
+                    <img style="width: 100%" class="card-img-top img-fluid" src="img_avatar1.png" alt="Card image">
+                    <h5 style="text-align:center;margin-top: 10px;font-weight: bold;">Holiday</h5>
+                    <p style="text-align:center;margin-top: 15px;">Friday 15:00</p>
+                    <button type="button" style="background-color:#7D97A5;color:white;text-align: center;border-radius:0px" class="btn">
+                        Info
+                    </button>
+                </div>
+                <div class="card" style="width:100%;padding:10px;margin-top: 10px;">
+                    <div style="text-align:center">Friend Request</div>
+                    <img style="width: 50%;margin:auto;margin-top: 10px;" class="card-img-top img-fluid" src="img_avatar1.png" alt="Card image">
+                    <h6 style="text-align:center;margin-top: 10px;">Jane Doe</h6>
+                    <p style="text-align:center;margin-top: 15px;">Friday 15:00</p>
+                    <div style="width:100%;margin-top:10px" class="btn-group">
+                        <button type="button" style="color:white;text-align: center;border-radius:0px" class="btn btn-success fas fa-check">
+                        </button>
+                        <button type="button" style="color:white;text-align: center;border-radius:0px" class="btn btn-danger fas fa-times">
+                        </button>
+                    </div>
+                </div>
+                <div class="card d-flex justify-content-center" style="width:100%;height:10%;padding:10px;margin-top: 10px;text-align:center">
+                    <span>ADS</span>
+                </div>
+                <div class="card d-flex justify-content-center" style="width:100%;height:10%;padding:10px;margin-top: 10px;text-align:center;font-size: 25px">
+                    <i class="fas fa-spider"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="width:100%;background-color:#435761;color:white;margin-top:30px;padding:15px">Footer</footer>
+    <footer style="width:100%;background-color:#303E57;color:white;padding:5px">Powered By w3.css</footer>
+    <script src="https://kit.fontawesome.com/20e62544f5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

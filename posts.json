@@ -1,0 +1,21 @@
+[{
+        "image": "img_avatar1.png",
+        "name": "Ahmed",
+        "post": "Hello"
+    },
+    {
+        "image": "img_avatar1.png",
+        "name": "Mohamed",
+        "post": "Welcome"
+    },
+    {
+        "image": "img_avatar1.png",
+        "name": "George",
+        "post": "I Feeling great"
+    },
+    {
+        "image": "img_avatar1.png",
+        "name": "Shady",
+        "post": "First post"
+    }
+]
