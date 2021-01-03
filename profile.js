@@ -15,7 +15,8 @@ window.onload = function() {
                     $("#post-button").parent().after(createPost(res.image, res.name, time, date, res.post, null));
                     //console.log(res.image + " " + res.name + " " + time + " " + date + " " + res.post)
                 }
-                $(".profile-post").toggleClass("profile-post");
+                //$(".profile-post").toggleClass("profile-post");
+                $(".profile-comment").attr("src", currentUser.imgSrc);
                 //console.log(results);
             },
             error: function(xhr) {
