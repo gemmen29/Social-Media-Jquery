@@ -16,6 +16,7 @@ window.onload = function() {
                         //}, 0);
                     } else {
                         alert("Not valid password");
+                        return;
                     }
                 }
             }
