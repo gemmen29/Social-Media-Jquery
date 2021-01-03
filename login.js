@@ -20,7 +20,9 @@ window.onload = function() {
                     }
                 }
             }
-            alert("Email Not Registered");
+            setTimeout(function() {
+                alert("Email Not Registered");
+            }, 1000);
         });
 
         $(document).on('keydown', function(e) {
